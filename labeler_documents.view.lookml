@@ -33,7 +33,7 @@
   
   - measure: avg_turn_around_time
     type: average
-    sql: TIMESTAMPDIFF(HOUR,${TABLE}.created_at,tblresponses.ts)
+    sql: TIMESTAMPDIFF(HOUR,${TABLE}.created_at,${TABLE}.answered_at)
     drill_fields: detail*
 
   - dimension: doc_key
