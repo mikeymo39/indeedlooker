@@ -30,11 +30,18 @@
   - measure: count
     type: count
     drill_fields: detail*
+  
+  - measure: avg_turn_around_time
+    type: average
+    sql: TIMESTAMPDIFF(HOUR,${TABLE}.created_at,tblresponses.ts)
+    drill_fields: detail*
 
   - dimension: doc_key
     type: string
     sql: ${TABLE}.doc_key
-
+    html: |
+      <a href="https://squall.indeed.com/labeler/label/{{ tbltasks.task_name }}?doc-key={{ value }}" target="_new">{{ value }}</a>
+      
   - dimension: task_name
     type: string
     sql: ${TABLE}.task_name
