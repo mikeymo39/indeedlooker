@@ -29,3 +29,6 @@
     type: number
 #     hidden: true
     sql: ${TABLE}.tasks_id
+    
+  - measure: count
+    type: count
