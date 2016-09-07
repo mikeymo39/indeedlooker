@@ -1,14 +1,14 @@
-- view: tbltasks
+- view: tasks
   sql_table_name: labelerdb.tbltasks
   fields:
 
   - dimension: id
     primary_key: true
     type: number
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.id
 
   - dimension: task_name
     type: string
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.task_name

@@ -1,4 +1,4 @@
-- view: Documents
+- view: documents
   sql_table_name: labelerdb.tbltaskdocuments
   fields:
 
@@ -6,7 +6,7 @@
     primary_key: true
     type: number
     sql: ${TABLE}.id
-
+    
   - dimension: tasks_id
     type: number
     sql: ${TABLE}.tasks_id
@@ -19,11 +19,11 @@
     type: string
     sql: ${TABLE}.doc_key
     html: |
-      <a href="https://squall.indeed.com/labeler/label/{{ tbltasks.task_name }}?doc-key={{ value }}" target="_new">{{ value }}</a>
+      <a href="https://squall.indeed.com/labeler/label/{{tasks.task_name }}?doc-key={{ value }}" target="_new">{{ value }}</a>
 
   - dimension: task_name
     type: string
-    sql: ${tbltasks.task_name}
+    sql: ${tasks.task_name}
 
   - dimension_group: created
     type: time
@@ -90,6 +90,3 @@
       - sift_trigger
       - nowhere_trigger
       - avg_turn_around_time
-
-
-

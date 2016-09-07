@@ -1,4 +1,4 @@
-- view: tblpendingregrades
+- view: pendingregrades
   sql_table_name: labelerdb.tblpendingregrades
   fields:
 
@@ -28,4 +28,3 @@
   - measure: count
     type: count
     drill_fields: [id]
-

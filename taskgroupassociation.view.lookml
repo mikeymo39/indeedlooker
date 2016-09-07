@@ -1,4 +1,4 @@
-- view: tbltaskgroupassociation
+- view: taskgroupassociation
   sql_table_name: labelerdb.tbltaskgroupassociation
   fields:
 
@@ -18,4 +18,3 @@
   - measure: count
     type: count
     drill_fields: [id]
-

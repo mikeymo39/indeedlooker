@@ -1,5 +1,5 @@
-- view: tbltaskflaggroup
-  sql_table_name: labelerdb.tbltaskflaggroup
+- view: taskjavascript
+  sql_table_name: labelerdb.tbltaskjavascript
   fields:
 
   - dimension: id
@@ -7,13 +7,13 @@
     type: number
     sql: ${TABLE}.id
 
-  - dimension: group_name
+  - dimension: filename
     type: string
-    sql: ${TABLE}.group_name
+    sql: ${TABLE}.filename
 
-  - dimension: group_type
+  - dimension: javascript
     type: string
-    sql: ${TABLE}.group_type
+    sql: ${TABLE}.javascript
 
   - dimension: tasks_id
     type: number
@@ -21,5 +21,4 @@
 
   - measure: count
     type: count
-    drill_fields: [id, group_name]
-
+    drill_fields: [id, filename]

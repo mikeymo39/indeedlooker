@@ -1,4 +1,4 @@
-- view: tblresponseflags
+- view: responseflags
   sql_table_name: labelerdb.tblresponseflags
   fields:
 
@@ -10,10 +10,10 @@
 
   - dimension: flags_id
     type: number
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.flags_id
 
   - dimension: responses_id
     type: number
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.responses_id

@@ -1,4 +1,4 @@
-- view: tbltaskhotkeys
+- view: taskhotkeys
   sql_table_name: labelerdb.tbltaskhotkeys
   fields:
 
@@ -22,4 +22,3 @@
   - measure: count
     type: count
     drill_fields: [id]
-

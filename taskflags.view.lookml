@@ -1,4 +1,4 @@
-- view: tbltaskflags
+- view: taskflags
   sql_table_name: labelerdb.tbltaskflags
   fields:
 
@@ -26,4 +26,3 @@
   - measure: count
     type: count
     drill_fields: []
-

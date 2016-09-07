@@ -1,5 +1,5 @@
-- view: tblgroupresponses
-  sql_table_name: labelerdb.tblgroupresponses
+- view: groupdocuments
+  sql_table_name: labelerdb.tblgroupdocuments
   fields:
 
   - dimension: id
@@ -12,15 +12,18 @@
     timeframes: [time, date, week, month]
     sql: ${TABLE}.created_at
 
-  - dimension: groupdocuments_id
-    type: number
-    sql: ${TABLE}.groupdocuments_id
+  - dimension: doc_key
+    type: string
+    sql: ${TABLE}.doc_key
 
   - dimension: parent_tasks_id
     type: number
     sql: ${TABLE}.parent_tasks_id
 
+  - dimension: unanswered_count
+    type: number
+    sql: ${TABLE}.unanswered_count
+
   - measure: count
     type: count
     drill_fields: [id]
-

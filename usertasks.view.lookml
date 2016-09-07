@@ -1,4 +1,4 @@
-- view: tblusertasks
+- view: usertasks
   sql_table_name: labelerdb.tblusertasks
   fields:
 
@@ -26,4 +26,3 @@
   - measure: count
     type: count
     drill_fields: [id]
-

@@ -1,4 +1,4 @@
-- view: tblfinalresponses
+- view: finalresponses
   sql_table_name: labelerdb.tblfinalresponses
   fields:
 
@@ -22,4 +22,3 @@
   - measure: count
     type: count
     drill_fields: [id]
-

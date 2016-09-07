@@ -1,6 +1,11 @@
-- view: tbltasktemplates
-  sql_table_name: labelerdb.tbltasktemplates
+- view: taskbulktemplates
+  sql_table_name: labelerdb.tbltaskbulktemplates
   fields:
+
+  - dimension: id
+    primary_key: true
+    type: number
+    sql: ${TABLE}.id
 
   - dimension: css
     type: string
@@ -20,5 +25,4 @@
 
   - measure: count
     type: count
-    drill_fields: [template_name]
-
+    drill_fields: [id, template_name]

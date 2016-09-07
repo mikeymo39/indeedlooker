@@ -1,4 +1,4 @@
-- view: tbltaskservices
+- view: taskservices
   sql_table_name: labelerdb.tbltaskservices
   fields:
 
@@ -22,4 +22,3 @@
   - measure: count
     type: count
     drill_fields: [id]
-

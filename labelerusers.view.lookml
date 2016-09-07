@@ -1,4 +1,4 @@
-- view: tbllabelerusers
+- view: labelerusers
   sql_table_name: labelerdb.tbllabelerusers
   fields:
 
@@ -10,15 +10,15 @@
 
   - dimension: access
     type: string
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.access
 
   - dimension: api_key
     type: string
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.api_key
 
   - dimension: username
     type: string
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.username

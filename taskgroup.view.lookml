@@ -1,4 +1,4 @@
-- view: tbltaskgroup
+- view: taskgroup
   sql_table_name: labelerdb.tbltaskgroup
   fields:
 
@@ -18,4 +18,3 @@
   - measure: count
     type: count
     drill_fields: [id, group_name]
-

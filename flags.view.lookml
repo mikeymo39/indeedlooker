@@ -1,4 +1,4 @@
-- view: tblflags
+- view: flags
   sql_table_name: labelerdb.tblflags
   fields:
 
@@ -10,8 +10,5 @@
 
   - dimension: flag
     type: string
-    hidden: true
+#     hidden: true
     sql: ${TABLE}.flag
-
-
-

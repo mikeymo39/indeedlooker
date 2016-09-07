@@ -1,5 +1,5 @@
 
-- view: labeler_documents
+- view:  labeler_documents
   derived_table:
     sql: |
       SELECT doc.doc_key, 
@@ -40,7 +40,7 @@
     type: string
     sql: ${TABLE}.doc_key
     html: |
-      <a href="https://squall.indeed.com/labeler/label/{{ tbltasks.task_name }}?doc-key={{ value }}" target="_new">{{ value }}</a>
+      <a href="https://squall.indeed.com/labeler/label/{{tasks.task_name }}?doc-key={{ value }}" target="_new">{{ value }}</a>
       
   - dimension: task_name
     type: string
@@ -105,4 +105,3 @@
       - flag
       - sift_trigger
       - nowhere_trigger
-
