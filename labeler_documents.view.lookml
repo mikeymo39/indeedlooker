@@ -40,7 +40,7 @@
     type: string
     sql: ${TABLE}.doc_key
     html: |
-      <a href="https://squall.indeed.com/labeler/label/{{tasks.task_name }}?doc-key={{ value }}" target="_new">{{ value }}</a>
+      <a href="https://squall.indeed.com/labeler/label/{{ task_name }}?doc-key={{ value }}" target="_new">{{ value }}</a>
       
   - dimension: task_name
     type: string
